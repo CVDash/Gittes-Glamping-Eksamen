@@ -1,0 +1,2 @@
+Til at starte projektet, du skal bare tryk på Go Live.
+Hvis du vil gerne ændre projektets styling, du må også køre sass watch scriptet ned til venstre ind i NPM scripts eller skrive "sass scss:css --watch"
