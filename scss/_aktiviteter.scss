@@ -1,0 +1,132 @@
+
+
+.aktiviteter-container {
+    
+    background-color: #CFD3CE;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 150px 0 150px 0;
+    gap: 50px;
+    width: 100%;
+    
+}
+
+.aktiviteter-container:before {
+    content:'';
+    display: block;
+    background: rgba(52, 98, 108, 0.5);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+
+.aktiviteter-container a {
+    color: white;
+}
+.aktiviteter-element {
+    position: relative;
+    display: flex;
+flex-direction: column;
+padding-bottom: 50px;
+
+}
+
+
+.aktiviteter-img {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 0;
+    right: 0;
+    left: 0;
+    align-items: center;
+    
+}
+
+.aktiviteter-img img {
+    width: 100vh;
+    height: 78vh;
+    object-fit: cover;
+}
+
+.aktiviteter-tekst-container {
+    z-index: 1;
+    padding-top: 50px;
+    padding-bottom: 50px;
+display: flex;
+flex-direction: column;
+gap: 200px;
+
+}
+
+.aktiviteter-tekst {
+    border-radius: 45px 0;
+    padding: 20px 40px;
+    background-color: #C6B497;
+}
+
+.aktiviteter-tekst h2 {
+    font-size: 60px;
+    font-family: 'Zen Loop', cursive;
+    font-weight: 400;
+}
+
+.aktiviteter-tekst p {
+    font-size: 30px;
+    font-family: 'Zen Loop', cursive;
+    font-weight: 400;
+}
+
+.aktiviteter-laesmere {
+    background-color: rgba(52, 98, 108, 1);
+    font-size: 30px;
+    font-family: 'Zen Loop', cursive;
+    border-radius: 45px 0;
+    padding: 20px 20px;
+    width: 40vh;
+}
+
+.aktiviteter-laesmere-tekst {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    padding: 10px;
+}
+
+.heart i{
+    background-color: rgba(131, 155, 151, 1);
+    color: #b9c6c4;
+    padding: 10px;
+    border-radius: 15px 0;
+}
+
+.aktiviteter-laesmere-button {
+    border: 1px solid white;
+    border-radius: 30px 0;
+    padding: 10px 20px;
+}
+
+
+
+.aktiviteter-laesmere-button-container.active .aktiviteter-hidden {
+    display: block;
+}
+
+.aktiviteter-laesmere-button-container .aktiviteter-hidden {
+    display: none;
+}
+
+.aktiviteter-hidden {
+    border-top: 1px solid white;
+    font-size: 14px;
+    margin-top: 10px;
+    padding-top: 10px;
+}

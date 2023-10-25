@@ -1,11 +1,106 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Nanum Gothic', sans-serif;
     box-sizing: border-box;
-    background-color: lightblue;
+    
+}
+
+.container1 {
+    
+    overflow: hidden;
+    background: linear-gradient(0deg, rgba(52, 98, 108, 0.5), rgba(52, 98, 108, 0.5)), url("/Gittes_Glamping_Assets/image_00.jpg");
+    background-position-x: 50%;
+    background-position-y: 60%;
+    width: 100%;
+    height: 20%;
+}
+
+.container2 {
+    
+    overflow: hidden;
+    background: linear-gradient(0deg, rgba(52, 98, 108, 0.5), rgba(52, 98, 108, 0.5)), url("/Gittes_Glamping_Assets/image_01.jpg");
+    
+    background-position-x: 75%;
+    background-position-y: 50%;
+    width: 100%;
+}
+
+.container3 {
+    
+    overflow: hidden;
+    background: linear-gradient(0deg, rgba(52, 98, 108, 0.5), rgba(52, 98, 108, 0.5)), url("/Gittes_Glamping_Assets/image_03.jpg");
+    background-position-x: 50%;
+    
+    width: 100%;
+}
+
+.container4 {
+    
+    overflow: hidden;
+    background: linear-gradient(0deg, rgba(52, 98, 108, 0.5), rgba(52, 98, 108, 0.5)), url("/Gittes_Glamping_Assets/image_04.jpg");
+    background-position: 80% 80%;
+    width: 100%;
+}
+
+.container5 {
+    
+    overflow: hidden;
+    background: linear-gradient(0deg, rgba(52, 98, 108, 0.5), rgba(52, 98, 108, 0.5)), url("/Gittes_Glamping_Assets/image_05.jpg");
+    background-position: 50% 0;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+a {
+    text-decoration: none;
+}
+
+footer {
+    background-color: #2A4F57;
+    text-align: center;
+    padding: 50px 0 50px 0;
 }
 
 footer img {
     width: 32px;
+}
+.sociale-medier {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 0 20px 0;
+}
+.sociale-medier a{
+   color: white;
+   font-size: 30px;
+   
+}
+
+.footerlogo {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 28px;
+    font-family: 'Zen Loop', cursive;
+    gap: 10px;
+    
+}
+
+.footerlogo p{
+    padding-top: 2px;
+    font-weight: 300;
+}
+
+.footerlogo img {
+    display: block;
+max-width: 32px;
+max-height: 32px;
+height: auto;
+width: auto;
 }

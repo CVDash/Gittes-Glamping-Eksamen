@@ -1,20 +1,24 @@
 .topnav {
     position: relative;
     display: flex;
-  justify-content: space-between;
-    align-items: center;
+    justify-content: space-between;
+    
 }
 
 .topnav a {
     display: block;
 }
 
-.topnav img {
-    width: 32px;
-    margin-left: 15px;
+.logotopnav img {
+    width: 40px;
+    margin-right: 15px;
+    margin-left: 17px;
+    padding-top: 17px;
+    margin-bottom: 17px;
 }
 
 .topnav .fa-bars {
+    
     color: white;
     font-size: 20px;
     background-color: #839B97;
@@ -31,12 +35,7 @@
 
 .computernav {
     display: none;
-    
 }
 
-.computernav a{
-    text-decoration: none;
-    color: white;
-    margin-left: 20px;
-    margin-right: 20px;
-}
+
+

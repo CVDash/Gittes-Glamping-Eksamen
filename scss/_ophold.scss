@@ -1,0 +1,92 @@
+.ophold-container {
+    
+    background-color: #CFD3CE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 150px 0 150px 0;
+    gap: 50px;
+    
+}
+
+
+
+
+
+.ophold-container a {
+    color: white;
+}
+.ophold-element {
+
+    display: flex;
+flex-direction: column;
+padding-bottom: 50px;
+
+}
+
+
+.ophold-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    left: 0;
+    align-items: center;
+    
+}
+
+.ophold-img img {
+    width: 100vh;
+    height: 78vh;
+    object-fit: cover;
+    
+}
+
+.ophold-container:before {
+    content:'';
+    display: block;
+    background: rgba(52, 98, 108, 0.5);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.ophold-tekst-container {
+    z-index: 1;
+    padding-top: 75px;
+    padding-bottom: 50px;
+display: flex;
+flex-direction: column;
+gap: 200px;
+width: 40vh;
+}
+
+.ophold-tekst {
+    border-radius: 45px 0;
+    padding: 20px 40px;
+    background-color: #C6B497;
+}
+
+.ophold-tekst h2 {
+    font-size: 44px;
+    font-family: 'Zen Loop', cursive;
+    font-weight: 400;
+}
+
+.ophold-tekst p {
+    font-size: 30px;
+    font-family: 'Zen Loop', cursive;
+    font-weight: 400;
+}
+
+.laesmere {
+    background-color: #839B97;
+    font-size: 30px;
+    font-family: 'Zen Loop', cursive;
+    border-radius: 45px 0;
+    padding: 20px 20px;
+}

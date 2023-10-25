@@ -1,9 +1,44 @@
-@media (min-width: 720px) {
+@media (min-width: 728px) {
+    
     .computernav{
     display: flex;
     justify-content: space-between;
 }
+
+
+.computernav a{
+   
+    padding: 0 20px;
+    margin-top: 20px;
+    
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-family: 'Zen Loop', cursive;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+}
+
     .topnav a {
         display: none;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .container4 {
+        background-position: 80% 50%;
+    }
+    .aktiviteter-container {
+        flex-direction: row;
+    }
+
+    .aktiviteter-img img {
+        width: 40vh;
+        height: 40vh;
+        transform: translate(0, 35%)
     }
 }

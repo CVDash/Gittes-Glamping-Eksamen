@@ -1,39 +1,297 @@
-.headerimg img {
-  width: 100%;
+header {
+  text-align: center;
+  margin: auto;
   height: 100%;
+  color: white;
+  font-family: "Zen Loop", cursive;
+  padding: 200px 0 200px 0;
+}
+
+header img {
+  margin-bottom: 20px;
+}
+
+header p {
+  font-size: 40px;
+  font-weight: 300;
+}
+
+header h1 {
+  font-size: 80px;
+  font-weight: 300;
+}
+
+.headertitler h2 {
+  font-weight: 300;
+  color: white;
+  font-size: 40px;
+}
+
+.headerlogo {
+  height: 70px;
+  width: 70px;
+}
+
+.booknu {
+  display: inline-block;
+  border: 1px solid white;
+  border-radius: 45px 0 45px 0;
+  padding: 20px 70px 20px 70px;
+  margin-top: 20px;
+}
+
+.header2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-family: "Nanum Gothic", sans-serif;
+  background-color: #34626C;
+  text-align: center;
+  border-radius: 50px 0 50px 0;
+  transform: translate(0, 10%);
+  padding: 90px 25px 90px 25px;
+  gap: 30px;
+}
+
+.header2 h1 {
+  font-family: "Zen Loop", cursive;
+  font-size: 60px;
+  font-weight: 400;
+}
+
+.header2 img {
+  object-fit: cover;
+  height: 180px;
+  width: 180px;
+  border-radius: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+
+.seophold {
+  color: white;
+  background-color: #839B97;
+  width: 36vh;
+  border-radius: 68px 0 68px 0;
+  padding: 30px;
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: 400;
+  font-family: "Zen Loop", cursive;
 }
 
 * {
   margin: 0;
   padding: 0;
-  font-family: "Nanum Gothic", sans-serif;
   box-sizing: border-box;
-  background-color: lightblue;
+}
+
+.container1 {
+  overflow: hidden;
+  background: linear-gradient(0deg, rgba(52, 98, 108, 0.5), rgba(52, 98, 108, 0.5)), url("/Gittes_Glamping_Assets/image_00.jpg");
+  background-position-x: 50%;
+  background-position-y: 60%;
+  width: 100%;
+  height: 20%;
+}
+
+.container2 {
+  overflow: hidden;
+  background: linear-gradient(0deg, rgba(52, 98, 108, 0.5), rgba(52, 98, 108, 0.5)), url("/Gittes_Glamping_Assets/image_01.jpg");
+  background-position-x: 75%;
+  background-position-y: 50%;
+  width: 100%;
+}
+
+.container3 {
+  overflow: hidden;
+  background: linear-gradient(0deg, rgba(52, 98, 108, 0.5), rgba(52, 98, 108, 0.5)), url("/Gittes_Glamping_Assets/image_03.jpg");
+  background-position-x: 50%;
+  width: 100%;
+}
+
+.container4 {
+  overflow: hidden;
+  background: linear-gradient(0deg, rgba(52, 98, 108, 0.5), rgba(52, 98, 108, 0.5)), url("/Gittes_Glamping_Assets/image_04.jpg");
+  background-position: 80% 80%;
+  width: 100%;
+}
+
+.container5 {
+  overflow: hidden;
+  background: linear-gradient(0deg, rgba(52, 98, 108, 0.5), rgba(52, 98, 108, 0.5)), url("/Gittes_Glamping_Assets/image_05.jpg");
+  background-position: 50% 0;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+footer {
+  background-color: #2A4F57;
+  text-align: center;
+  padding: 50px 0 50px 0;
 }
 
 footer img {
   width: 32px;
 }
 
+.sociale-medier {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 0 20px 0;
+}
+
+.sociale-medier a {
+  color: white;
+  font-size: 30px;
+}
+
+.footerlogo {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 28px;
+  font-family: "Zen Loop", cursive;
+  gap: 10px;
+}
+
+.footerlogo p {
+  padding-top: 2px;
+  font-weight: 300;
+}
+
+.footerlogo img {
+  display: block;
+  max-width: 32px;
+  max-height: 32px;
+  height: auto;
+  width: auto;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.label-container {
+  padding-bottom: 20px;
+}
+
+.label-container p {
+  padding-bottom: 5px;
+  font-family: "Zen Loop", cursive;
+  font-size: 30px;
+}
+
+input {
+  color: white;
+  background-color: #34626C;
+  border: 1px solid white;
+  border-radius: 50px;
+  padding: 5px 25px;
+  font-size: 30px;
+  width: 45vh;
+  font-family: "Zen Loop", cursive;
+}
+
+select {
+  color: white;
+  background-color: #34626C;
+  border: 1px solid white;
+  border-radius: 50px;
+  padding: 5px 25px;
+  font-size: 30px;
+  width: 45vh;
+  font-family: "Zen Loop", cursive;
+  font-weight: 400;
+  background: url(/Gittes_Glamping_Assets/chevron-down-solid.svg) no-repeat 95% 50%;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+textarea {
+  color: white;
+  background-color: #34626C;
+  border: 1px solid white;
+  border-radius: 30px;
+  padding: 5px 15px 205px 15px;
+  width: 45vh;
+  font-size: 30px;
+  font-weight: 400;
+  font-family: "Zen Loop", cursive;
+  margin-bottom: 10px;
+}
+
+.submitbutton-container {
+  background-color: #839B97;
+  font-size: 30px;
+  font-family: "Zen Loop", cursive;
+  border-radius: 45px 0;
+  padding: 30px 20px;
+  width: 30vh;
+}
+
 #dropdown {
-  text-decoration: none;
   display: none;
+  position: absolute;
+  font-family: "Zen Loop", cursive;
+  font-size: 30px;
+  background-color: #849B97;
+  width: 100%;
+  padding-bottom: 40px;
+}
+
+#dropdown div {
+  padding-bottom: 20px;
+}
+
+#dropdown a {
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+.dropdownnav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dropdownclose {
+  display: flex;
+  justify-content: space-between;
+  padding: 3vh;
+}
+
+.dropdownclose img {
+  width: 42px;
 }
 
 .topnav {
   position: relative;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .topnav a {
   display: block;
 }
 
-.topnav img {
-  width: 32px;
-  margin-left: 15px;
+.logotopnav img {
+  width: 40px;
+  margin-right: 15px;
+  margin-left: 17px;
+  padding-top: 17px;
+  margin-bottom: 17px;
 }
 
 .topnav .fa-bars {
@@ -55,21 +313,305 @@ footer img {
   display: none;
 }
 
-.computernav a {
-  text-decoration: none;
+.ophold-container {
+  background-color: #CFD3CE;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: white;
-  margin-left: 20px;
-  margin-right: 20px;
+  text-align: center;
+  padding: 150px 0 150px 0;
+  gap: 50px;
 }
 
-@media (min-width: 720px) {
+.ophold-container a {
+  color: white;
+}
+
+.ophold-element {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+}
+
+.ophold-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  left: 0;
+  align-items: center;
+}
+
+.ophold-img img {
+  width: 100vh;
+  height: 78vh;
+  object-fit: cover;
+}
+
+.ophold-container:before {
+  content: "";
+  display: block;
+  background: rgba(52, 98, 108, 0.5);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.ophold-tekst-container {
+  z-index: 1;
+  padding-top: 75px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 200px;
+  width: 40vh;
+}
+
+.ophold-tekst {
+  border-radius: 45px 0;
+  padding: 20px 40px;
+  background-color: #C6B497;
+}
+
+.ophold-tekst h2 {
+  font-size: 44px;
+  font-family: "Zen Loop", cursive;
+  font-weight: 400;
+}
+
+.ophold-tekst p {
+  font-size: 30px;
+  font-family: "Zen Loop", cursive;
+  font-weight: 400;
+}
+
+.laesmere {
+  background-color: #839B97;
+  font-size: 30px;
+  font-family: "Zen Loop", cursive;
+  border-radius: 45px 0;
+  padding: 20px 20px;
+}
+
+.aktiviteter-container {
+  background-color: #CFD3CE;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 150px 0 150px 0;
+  gap: 50px;
+  width: 100%;
+}
+
+.aktiviteter-container:before {
+  content: "";
+  display: block;
+  background: rgba(52, 98, 108, 0.5);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.aktiviteter-container a {
+  color: white;
+}
+
+.aktiviteter-element {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+}
+
+.aktiviteter-img {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 0;
+  right: 0;
+  left: 0;
+  align-items: center;
+}
+
+.aktiviteter-img img {
+  width: 100vh;
+  height: 78vh;
+  object-fit: cover;
+}
+
+.aktiviteter-tekst-container {
+  z-index: 1;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 200px;
+}
+
+.aktiviteter-tekst {
+  border-radius: 45px 0;
+  padding: 20px 40px;
+  background-color: #C6B497;
+}
+
+.aktiviteter-tekst h2 {
+  font-size: 60px;
+  font-family: "Zen Loop", cursive;
+  font-weight: 400;
+}
+
+.aktiviteter-tekst p {
+  font-size: 30px;
+  font-family: "Zen Loop", cursive;
+  font-weight: 400;
+}
+
+.aktiviteter-laesmere {
+  background-color: rgb(52, 98, 108);
+  font-size: 30px;
+  font-family: "Zen Loop", cursive;
+  border-radius: 45px 0;
+  padding: 20px 20px;
+  width: 40vh;
+}
+
+.aktiviteter-laesmere-tekst {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  padding: 10px;
+}
+
+.heart i {
+  background-color: rgb(131, 155, 151);
+  color: #b9c6c4;
+  padding: 10px;
+  border-radius: 15px 0;
+}
+
+.aktiviteter-laesmere-button {
+  border: 1px solid white;
+  border-radius: 30px 0;
+  padding: 10px 20px;
+}
+
+.aktiviteter-laesmere-button-container.active .aktiviteter-hidden {
+  display: block;
+}
+
+.aktiviteter-laesmere-button-container .aktiviteter-hidden {
+  display: none;
+}
+
+.aktiviteter-hidden {
+  border-top: 1px solid white;
+  font-size: 14px;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+@media (min-width: 728px) {
   .computernav {
     display: flex;
     justify-content: space-between;
   }
+  .computernav a {
+    padding: 0 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-family: "Zen Loop", cursive;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+  }
   .topnav a {
     display: none;
   }
+}
+@media (min-width: 1024px) {
+  .container4 {
+    background-position: 80% 50%;
+  }
+  .aktiviteter-container {
+    flex-direction: row;
+  }
+  .aktiviteter-img img {
+    width: 40vh;
+    height: 40vh;
+    transform: translate(0, 35%);
+  }
+}
+.anbefalinger {
+  background-color: #CFD3CE;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  text-align: center;
+  padding: 120px 0 80px 0;
+  height: 100%;
+  color: white;
+}
+
+.anbefalinger:before {
+  content: "";
+  display: block;
+  background: rgba(52, 98, 108, 0.5);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.anbefaling-titel {
+  background-color: #C6B497;
+  align-self: center;
+  width: 45vh;
+  font-family: "Zen Loop", cursive;
+  border-radius: 66px 0 66px 0;
+  padding: 20px 20px 20px 20px;
+  font-size: 60px;
+}
+
+.anbefaling-element {
+  display: flex;
+  flex-direction: column;
+  background-color: #839B97;
+  border-radius: 66px 0 66px 0;
+  align-self: center;
+  width: 45vh;
+  font-family: "Nanum Gothic", sans-serif;
+  padding: 20px 20px 20px 20px;
+  gap: 10px;
+}
+
+.fa-bars:hover, #dropdown a:hover {
+  color: #2A4F57;
+}
+
+.fa-facebook-square:hover, .fa-instagram:hover {
+  color: gray;
+}
+
+.booknu:hover, .submitbutton-container:hover, .seophold:hover, .laesmere:hover, .aktiviteter-laesmere-button:hover {
+  background-color: gray;
+  border-color: transparent;
+}
+
+.computernav a:hover {
+  background-color: rgba(128, 128, 128, 0.5);
+  border-color: transparent;
 }
 
 /*# sourceMappingURL=main.css.map */

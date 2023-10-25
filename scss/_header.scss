@@ -1,4 +1,94 @@
-.headerimg img {
-    width: 100%;
+header {
+    text-align: center;
+    margin: auto;
     height: 100%;
+    color: white;
+    
+    font-family: 'Zen Loop', cursive;
+    padding: 200px 0 200px 0
 }
+
+header img {
+    margin-bottom: 20px;
+}
+
+header p {
+    font-size: 40px;
+    font-weight: 300;
+}
+
+header h1 {
+    font-size: 80px;
+    font-weight: 300;
+}
+
+.headertitler h2 {
+    font-weight: 300;
+    color: white;
+    font-size: 40px;
+    
+    
+}
+
+
+
+.headerlogo {
+    height: 70px;
+    width:70px;
+}
+
+.booknu {
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 45px 0 45px 0;
+    padding: 20px 70px 20px 70px;
+    
+    margin-top: 20px;
+}
+
+.header2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: 'Nanum Gothic', sans-serif;
+    background-color: #34626C;
+    text-align: center;
+    border-radius: 50px 0 50px 0;
+    transform: translate(0, 10%);
+    padding: 90px 25px 90px 25px;
+    gap: 30px;
+}
+
+.header2 h1 {
+    font-family: 'Zen Loop', cursive;
+    font-size: 60px;
+    font-weight: 400;
+}
+
+.header2 img {
+    object-fit: cover;
+    height: 180px;
+    width: 180px;
+    border-radius:100%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.seophold{
+color: white;
+background-color: #839B97;
+ width: 36vh;
+  border-radius: 68px 0 68px 0;
+  padding: 30px;
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: 400;
+  font-family: 'Zen Loop', cursive;
+}
+
+
+
+
+
+

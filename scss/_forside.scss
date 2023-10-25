@@ -1,0 +1,48 @@
+.anbefalinger {
+    background-color: #CFD3CE;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    text-align: center;
+    padding: 120px 0 80px 0;
+    height: 100%;
+    color: white;
+    
+}
+
+.anbefalinger:before {
+    content:'';
+    display: block;
+    background: rgba(52, 98, 108, 0.5);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.anbefaling-titel {
+    background-color: #C6B497;
+    align-self: center;
+    width: 45vh;
+    font-family: 'Zen Loop', cursive;
+    border-radius: 66px 0 66px 0;
+    padding: 20px 20px 20px 20px;
+    font-size: 60px;
+}
+
+.anbefaling-element {
+    display: flex;
+    flex-direction: column;
+    background-color: #839B97;
+    border-radius: 66px 0 66px 0;
+    align-self: center;
+    width: 45vh;
+    font-family: 'Nanum Gothic', sans-serif;
+    padding: 20px 20px 20px 20px;
+    gap: 10px;
+}
+
+
+.anbefaling-tekst h1, .anbefaling-tekst p {
+
+}
