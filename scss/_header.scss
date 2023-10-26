@@ -44,20 +44,31 @@ header h1 {
     padding: 20px 70px 20px 70px;
     
     margin-top: 20px;
+    
+}
+
+.header2 h2 {
+    font-weight: 400;
+    font-family: "Zen Loop", cursive;
 }
 
 .header2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: white;
+    color: #B9C6C4;
     font-family: 'Nanum Gothic', sans-serif;
     background-color: #34626C;
     text-align: center;
     border-radius: 50px 0 50px 0;
     transform: translate(0, 10%);
-    padding: 90px 25px 90px 25px;
+    padding: 90px 15px 90px 15px;
     gap: 30px;
+}
+
+.header2 a {
+    text-decoration: none;
+    color: white;
 }
 
 .header2 h1 {
@@ -74,6 +85,8 @@ header h1 {
     overflow: hidden;
     text-align: center;
 }
+
+
 
 .seophold{
 color: white;

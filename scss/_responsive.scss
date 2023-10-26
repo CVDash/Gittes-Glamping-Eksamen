@@ -1,3 +1,11 @@
+@media (max-width: 732px) {
+    .aktiviteter-element {
+        width: 50vh;
+    }
+}
+
+
+
 @media (min-width: 728px) {
     
     .computernav{
@@ -25,17 +33,32 @@
     .topnav a {
         display: none;
     }
+
+    .header2 p {
+        padding: 0 60px;
+    }
+    
 }
 
 @media (min-width: 1024px) {
 
-    .container4 {
-        background-position: 80% 50%;
+    .aktiviteter-laesmere {
+        width: 35vh;
     }
 
-    .container2 {
-         background-position: top;
-        
+
+
+    .container4 {
+        background-position: 80% 0;
+    }
+
+
+    .computernav {
+        margin: 10px 60px 0 60px;
+    }
+
+    .container1 {
+        background-position: 50% 0;
     }
 
     .aktiviteter-container {
@@ -48,35 +71,64 @@
         transform: translate(0, 35%)
     }
 
-    .anbefalinger {
-        flex-direction: row;
+    .aktiviteter-element {
+        width: 50vh;
+        
     }
 
+    .anbefalinger-container {
+        display: flex;
+        flex-direction: row;
+        padding: 50px 30px 0 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .anbefaling-element {
+        height: 300px;
+        width: 50vh;
+    }
+
+    .anbefaling-element p {
+        font-size: 12px;
+    }
+
+    
+    .header2 p {
+        padding: 0 120px;
+    }
+}
+
+@media (min-width: 1178px) {
+
+    .anbefaling-element {
+        width: 29vh;
+    }
 
     .ophold-container {
         flex-direction: row;
         height: 100%;
         align-content: center;
-        position: relative;
         justify-content: center;
+        gap: 90px;
+        padding: 150px 50px
     }
 
-    .ophold-element {
-        padding-bottom: 0;
-    }
-
-    .ophold-img{
-        position: relative;
-    }
-
-
-    .ophold-img img {
-        width: 40vh;
-        height: 40vh;
+    .ophold-element{
+        width: 50vh;
+        background-size: contain;
     }
 
     .ophold-tekst-container {
-        position: absolute;
-        transform: translate(0,-28%);
+        gap: 100px;
+        padding-top: 0;
+        padding-bottom: 0;
     }
+
+
+    .container2 {
+        background-position: top;
+       
+   }
+
 }

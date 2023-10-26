@@ -40,18 +40,28 @@ header h1 {
   margin-top: 20px;
 }
 
+.header2 h2 {
+  font-weight: 400;
+  font-family: "Zen Loop", cursive;
+}
+
 .header2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: white;
+  color: #B9C6C4;
   font-family: "Nanum Gothic", sans-serif;
   background-color: #34626C;
   text-align: center;
   border-radius: 50px 0 50px 0;
   transform: translate(0, 10%);
-  padding: 90px 25px 90px 25px;
+  padding: 90px 15px 90px 15px;
   gap: 30px;
+}
+
+.header2 a {
+  text-decoration: none;
+  color: white;
 }
 
 .header2 h1 {
@@ -104,6 +114,7 @@ button {
   background-position-y: 60%;
   width: 100%;
   height: 20%;
+  background-repeat: no-repeat;
 }
 
 .container2 {
@@ -133,6 +144,27 @@ button {
   background: linear-gradient(0deg, rgba(52, 98, 108, 0.5), rgba(52, 98, 108, 0.5)), url("/Gittes_Glamping_Assets/image_05.jpg");
   background-position: 50% 0;
   width: 100%;
+}
+
+.containerophold1 {
+  overflow: hidden;
+  width: 100%;
+}
+
+.containerophold2 {
+  overflow: hidden;
+  width: 100%;
+}
+
+.containerophold3 {
+  overflow: hidden;
+  width: 100%;
+}
+
+.container-background {
+  overflow: hidden;
+  width: 100%;
+  background-size: cover;
 }
 
 a {
@@ -191,19 +223,19 @@ form {
 }
 
 .label-container {
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 
 .label-container p {
-  padding-bottom: 5px;
+  padding-bottom: 10px;
   font-family: "Zen Loop", cursive;
   font-size: 30px;
 }
 
 input {
-  color: white;
+  color: #B9C6C4;
   background-color: #34626C;
-  border: 1px solid white;
+  border: 1px solid #B9C6C4;
   border-radius: 50px;
   padding: 5px 25px;
   font-size: 30px;
@@ -212,9 +244,9 @@ input {
 }
 
 select {
-  color: white;
+  color: #B9C6C4;
   background-color: #34626C;
-  border: 1px solid white;
+  border: 1px solid #B9C6C4;
   border-radius: 50px;
   padding: 5px 25px;
   font-size: 30px;
@@ -228,9 +260,9 @@ select {
 }
 
 textarea {
-  color: white;
+  color: #B9C6C4;
   background-color: #34626C;
-  border: 1px solid white;
+  border: 1px solid #B9C6C4;
   border-radius: 30px;
   padding: 5px 15px 205px 15px;
   width: 45vh;
@@ -328,7 +360,6 @@ textarea {
   background-color: #CFD3CE;
   display: flex;
   flex-direction: column;
-  align-items: center;
   color: white;
   text-align: center;
   padding: 150px 0 150px 0;
@@ -342,7 +373,12 @@ textarea {
 .ophold-element {
   display: flex;
   flex-direction: column;
-  padding-bottom: 50px;
+  width: inherit;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 60%;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .ophold-img {
@@ -368,7 +404,6 @@ textarea {
   display: flex;
   flex-direction: column;
   gap: 200px;
-  width: 40vh;
 }
 
 .ophold-tekst {
@@ -426,14 +461,15 @@ textarea {
 }
 
 .aktiviteter-element {
-  position: relative;
   display: flex;
   flex-direction: column;
   padding-bottom: 50px;
-  background-size: cover;
-  background-position: center;
+  background-size: contain;
+  background-position: 50% 35%;
   background-repeat: no-repeat;
-  width: 100%;
+  width: 90vh;
+  justify-content: center;
+  align-self: center;
 }
 
 .aktiviteter-img {
@@ -459,6 +495,8 @@ textarea {
   display: flex;
   flex-direction: column;
   gap: 200px;
+  align-items: center;
+  color: white;
 }
 
 .aktiviteter-tekst {
@@ -486,6 +524,7 @@ textarea {
   border-radius: 45px 0;
   padding: 20px 20px;
   width: 40vh;
+  color: #B9C6C4;
 }
 
 .aktiviteter-laesmere-tekst {
@@ -497,15 +536,48 @@ textarea {
 
 .heart i {
   background-color: rgb(131, 155, 151);
-  color: #b9c6c4;
   padding: 10px;
   border-radius: 15px 0;
 }
 
+.heart {
+  color: #B9C6C4;
+}
+
+button:focus {
+  outline: none;
+}
+
+.heartbutton:focus {
+  color: gray;
+}
+
 .aktiviteter-laesmere-button {
-  border: 1px solid white;
+  border: 1px solid #B9C6C4;
   border-radius: 30px 0;
   padding: 10px 20px;
+}
+
+.aktiviteter-laesmere-button-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.aktiviteter-laesmere-button-container #chevron1 {
+  display: block;
+}
+
+.aktiviteter-laesmere-button-container #chevron2 {
+  display: none;
+}
+
+.aktiviteter-laesmere-button-container.active #chevron1 {
+  display: none;
+}
+
+.aktiviteter-laesmere-button-container.active #chevron2 {
+  display: block;
 }
 
 .aktiviteter-laesmere-button-container.active .aktiviteter-hidden {
@@ -517,74 +589,13 @@ textarea {
 }
 
 .aktiviteter-hidden {
-  border-top: 1px solid white;
+  border-top: 1px solid #B9C6C4;
   font-size: 14px;
   margin-top: 10px;
   padding-top: 10px;
+  font-family: "Nanum Gothic", sans-serif;
 }
 
-@media (min-width: 728px) {
-  .computernav {
-    display: flex;
-    justify-content: space-between;
-  }
-  .computernav a {
-    padding: 0 20px;
-    margin-top: 20px;
-    border-radius: 20px;
-    text-decoration: none;
-    color: white;
-    margin-right: 10px;
-    margin-left: 10px;
-    font-family: "Zen Loop", cursive;
-    font-size: 40px;
-    display: flex;
-    align-items: center;
-  }
-  .topnav a {
-    display: none;
-  }
-}
-@media (min-width: 1024px) {
-  .container4 {
-    background-position: 80% 50%;
-  }
-  .container2 {
-    background-position: top;
-  }
-  .aktiviteter-container {
-    flex-direction: row;
-  }
-  .aktiviteter-img img {
-    width: 40vh;
-    height: 40vh;
-    transform: translate(0, 35%);
-  }
-  .anbefalinger {
-    flex-direction: row;
-  }
-  .ophold-container {
-    flex-direction: row;
-    height: 100%;
-    align-content: center;
-    position: relative;
-    justify-content: center;
-  }
-  .ophold-element {
-    padding-bottom: 0;
-  }
-  .ophold-img {
-    position: relative;
-  }
-  .ophold-img img {
-    width: 40vh;
-    height: 40vh;
-  }
-  .ophold-tekst-container {
-    position: absolute;
-    transform: translate(0, -28%);
-  }
-}
 .anbefalinger {
   background-color: #CFD3CE;
   display: flex;
@@ -593,6 +604,14 @@ textarea {
   text-align: center;
   padding: 120px 0 80px 0;
   height: 100%;
+  color: white;
+}
+
+.anbefalinger-container {
+  background-color: #CFD3CE;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
   color: white;
 }
 
@@ -628,6 +647,10 @@ textarea {
   gap: 10px;
 }
 
+.anbefaling-element p {
+  font-size: 14px;
+}
+
 .fa-bars:hover, #dropdown a:hover {
   color: #2A4F57;
 }
@@ -647,10 +670,9 @@ textarea {
 }
 
 .medlemtak {
-  background: rgb(148, 120, 167);
-  text-align: center;
+  font-family: "Zen Loop", cursive;
   height: 61.6vh;
-  z-index: 10;
+  font-size: 40px;
   top: 0;
   width: 100%;
   padding: 80px 0 60px 0;
@@ -667,10 +689,108 @@ textarea {
 
 .medlemtakbutton a {
   text-decoration: none;
-  background-color: #355674;
+  background-color: #839B97;
   color: #D7E6EC;
-  border-radius: 100px;
+  border-radius: 55px 0;
   padding: 15px 80px 15px 80px;
+}
+
+@media (max-width: 732px) {
+  .aktiviteter-element {
+    width: 50vh;
+  }
+}
+@media (min-width: 728px) {
+  .computernav {
+    display: flex;
+    justify-content: space-between;
+  }
+  .computernav a {
+    padding: 0 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-family: "Zen Loop", cursive;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+  }
+  .topnav a {
+    display: none;
+  }
+  .header2 p {
+    padding: 0 60px;
+  }
+}
+@media (min-width: 1024px) {
+  .aktiviteter-laesmere {
+    width: 35vh;
+  }
+  .container4 {
+    background-position: 80% 0;
+  }
+  .computernav {
+    margin: 10px 60px 0 60px;
+  }
+  .container1 {
+    background-position: 50% 0;
+  }
+  .aktiviteter-container {
+    flex-direction: row;
+  }
+  .aktiviteter-img img {
+    width: 40vh;
+    height: 40vh;
+    transform: translate(0, 35%);
+  }
+  .aktiviteter-element {
+    width: 50vh;
+  }
+  .anbefalinger-container {
+    display: flex;
+    flex-direction: row;
+    padding: 50px 30px 0 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .anbefaling-element {
+    height: 300px;
+    width: 50vh;
+  }
+  .anbefaling-element p {
+    font-size: 12px;
+  }
+  .header2 p {
+    padding: 0 120px;
+  }
+}
+@media (min-width: 1178px) {
+  .anbefaling-element {
+    width: 29vh;
+  }
+  .ophold-container {
+    flex-direction: row;
+    height: 100%;
+    align-content: center;
+    justify-content: center;
+    gap: 90px;
+    padding: 150px 50px;
+  }
+  .ophold-element {
+    width: 50vh;
+    background-size: contain;
+  }
+  .ophold-tekst-container {
+    gap: 100px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .container2 {
+    background-position: top;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

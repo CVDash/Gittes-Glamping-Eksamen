@@ -7,9 +7,6 @@ const activities = {
     template : (activity, index) => `
     
     <div class="aktiviteter-element" style="background-image: url(${activity.image})">
-    <div class="aktiviteter-img">
-      
-    </div>
     <div class="aktiviteter-tekst-container">
   <div class="aktiviteter-tekst">
     <h2>${activity.title}</h2>
@@ -20,12 +17,15 @@ const activities = {
       <p>${activity.date}</p>
       <p>kl ${activity.time}</p>
     </div>
-      <div class="heart"><i id="heart" class="fas fa-heart fa-xs"></i></div>
+      <div class="heart"><button class="heartbutton"><i id="heart" class="fas fa-heart fa-xs"></i></button></div>
     </div>
     <div class="aktiviteter-laesmere-button-container">
     <div class="aktiviteter-laesmere-button">
+    <div class="aktiviteter-laesmere-button-flex">
     <p>L&AElig;S MERE</p>
-    
+    <i class="fas fa-chevron-up fa-sm" id="chevron2"></i>
+    <i class="fas fa-chevron-down fa-sm" id="chevron1"></i>
+    </div>
     <div class="aktiviteter-hidden">
                 <p>${activity.description}</p>
               </div>

@@ -7,15 +7,15 @@ const reviews = {
     template : (review) => `
     
     <div class="anbefaling-element">
-    <p style="font-family: 'Zen Loop', cursive; font-size: 30px;">${review.name}, ${review.age} år <br>Har været på ${review.stay}</p>
-    <p style="font-size: 14px;">${review.review}</p>
+    <h1 style="font-family: 'Zen Loop', cursive; font-size: 30px; font-weight:400;">${review.name}, ${review.age} år <br>Har været på ${review.stay}</h1>
+    <p>${review.review}</p>
 
   </div>
       `,
 
     init : async () => {
 
-        let reviewContainer = document.querySelector('.anbefalinger');
+        let reviewContainer = document.querySelector('.anbefalinger-container');
 
         if(reviewContainer)
         {

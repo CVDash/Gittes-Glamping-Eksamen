@@ -32,14 +32,15 @@
     color: white;
 }
 .aktiviteter-element {
-    position: relative;
     display: flex;
     flex-direction: column;
     padding-bottom: 50px;
-    background-size:cover;
-    background-position: center;
+    background-size:contain;
+    background-position: 50% 35%;
     background-repeat: no-repeat;
-    width: 100%;
+    width: 90vh;
+    justify-content: center;
+    align-self: center;
 }
 
 
@@ -67,7 +68,8 @@
 display: flex;
 flex-direction: column;
 gap: 200px;
-
+align-items: center;
+color: white;
 }
 
 .aktiviteter-tekst {
@@ -95,6 +97,7 @@ gap: 200px;
     border-radius: 45px 0;
     padding: 20px 20px;
     width: 40vh;
+    color:#B9C6C4;
 }
 
 .aktiviteter-laesmere-tekst {
@@ -106,16 +109,52 @@ gap: 200px;
 
 .heart i{
     background-color: rgba(131, 155, 151, 1);
-    color: #b9c6c4;
     padding: 10px;
     border-radius: 15px 0;
 }
 
+.heart {
+    color: #B9C6C4;
+}
+
+button:focus {
+    outline: none;
+}
+.heartbutton:focus {
+    color: gray;
+}
+
 .aktiviteter-laesmere-button {
-    border: 1px solid white;
+    border: 1px solid #B9C6C4;
     border-radius: 30px 0;
     padding: 10px 20px;
 }
+
+.aktiviteter-laesmere-button-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.aktiviteter-laesmere-button-container #chevron1 {
+    display: block;
+}
+
+.aktiviteter-laesmere-button-container #chevron2 {
+    display: none;
+}
+
+.aktiviteter-laesmere-button-container.active #chevron1 {
+    display: none;
+}
+
+.aktiviteter-laesmere-button-container.active #chevron2 {
+    display: block;
+}
+
+
+
+
 
 
 
@@ -128,8 +167,10 @@ gap: 200px;
 }
 
 .aktiviteter-hidden {
-    border-top: 1px solid white;
+    border-top: 1px solid #B9C6C4;
     font-size: 14px;
     margin-top: 10px;
     padding-top: 10px;
+    font-family: 'Nanum Gothic', sans-serif;
 }
+

@@ -10,6 +10,15 @@
     
 }
 
+.anbefalinger-container {
+    background-color: #CFD3CE;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    color: white;
+    
+}
+
 .anbefalinger:before {
     content:'';
     display: block;
@@ -43,6 +52,6 @@
 }
 
 
-.anbefaling-tekst h1, .anbefaling-tekst p {
-
+.anbefaling-element p {
+    font-size: 14px;
 }

@@ -5,18 +5,18 @@ form {
     align-items: center;
 }
 .label-container  {
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 }
 .label-container p {
-    padding-bottom:5px;
+    padding-bottom:10px;
     font-family: 'Zen Loop', cursive;
     font-size: 30px;
 }
 
 input {
-    color: white;
+    color: #B9C6C4;
     background-color: #34626C;
-    border: 1px solid white;
+    border: 1px solid #B9C6C4;
     border-radius: 50px;
     padding:5px 25px;
     font-size: 30px;
@@ -25,9 +25,9 @@ input {
 }
 
 select {
-    color: white;
+    color: #B9C6C4;
     background-color: #34626C;
-    border: 1px solid white;
+    border: 1px solid #B9C6C4;
     border-radius: 50px;
     padding:5px 25px;
     font-size: 30px;
@@ -42,9 +42,9 @@ select {
 
 
 textarea {
-    color: white;
+    color: #B9C6C4;
     background-color: #34626C;
-    border: 1px solid white;
+    border: 1px solid #B9C6C4;
     border-radius: 30px;
     padding:5px 15px 205px 15px;
     width: 45vh;

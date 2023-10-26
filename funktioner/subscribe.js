@@ -41,7 +41,7 @@ const subscribe = {
 
             let subscribeForm = document.querySelector('#form');
             subscribeForm.style = 'display:none';
-            let formContainer = document.querySelector('.form-container')
+            let formContainer = document.querySelector('.header2')
             
             
             if(!response.data) {

@@ -38,7 +38,14 @@ Onsdag
     - Har fået "aktiviteter" siden at være responsiv
 
 Torsdag
-    -
+    - Har fået formen at skrive data på serveren
+    - Fået siden lidt mere responsiv til computer
+    - Har tilføjet chevron ikoner til aktiviteters læs mere knap
+    - Har tilføjet flex-direction: row til anbefalinger, aktiviteterne og ophold efter width er størrer end 1024px
+    - Har skabet 3 ny html filer: Familiepakken.html, Weekendtur.html og Romantisk Getaway.html og har også fået
+    informationen ind i dem fra API (Opgave 2)
+    - Har staged og committed alt til GitHub
+    - Har færdiggjort projektet 99.9%
 
 Fredag
     -

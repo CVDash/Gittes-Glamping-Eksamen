@@ -1,9 +1,7 @@
 .medlemtak {
-    background:rgba(148, 120, 167, 1);
-    text-align: center;
-  
+    font-family: 'Zen Loop', cursive;
     height: 61.6vh;
-    z-index: 10;
+    font-size: 40px;
     top: 0;
     width: 100%;
     padding: 80px 0 60px 0;
@@ -21,8 +19,8 @@
 }
 .medlemtakbutton a {
     text-decoration: none;
-    background-color: #355674;
+    background-color: #839B97;
     color: #D7E6EC;
-    border-radius: 100px;
+    border-radius: 55px 0;
     padding: 15px 80px 15px 80px;
 }

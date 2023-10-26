@@ -1,24 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css"/>
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
-      integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
-      crossorigin="anonymous"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Zen+Loop&display=swap" rel="stylesheet"> 
-    <script type="text/javascript" src="script.js"></script>
-    <script src="index.js" type="module"></script>
-    <title>Document</title>
-</head>
-<body>
-  <div class="container5">
+import { config } from "../misc/config.js";
+import service from "../services/services.js";
+
+
+const getaways = {
+    
+    template : (getaway) => `
+    
+    <div class="container-background" style="background-image: url(${getaway.image})">
     <nav>
       <div class="topnav">
       <a class="logotopnav" href="index.html"><img src="/Gittes_Glamping_Assets/logo.png"></a>
@@ -31,7 +19,6 @@
         <div class="dropdownnav"><a href="ophold.html">Ophold</a></div>
         <div class="dropdownnav"><a href="kontakt.html">Kontakt</a></div>
         <div class="dropdownnav"><a href="aktiviteter.html">Aktiviteter</a></div>
-        <div class="dropdownnav"><a href="minliste.html">Min liste</a></div>
       </div>
       </div>
       
@@ -41,7 +28,6 @@
         <a href="ophold.html">Ophold</a>
         <a href="kontakt.html">Kontakt</a>
         <a href="aktiviteter.html">Aktiviteter</a>
-        <a href="minliste.html">Min liste</a>
       </div>
 
       
@@ -50,26 +36,25 @@
     <header>
       
       <div class="headertitler">
-        <h1>Min Liste</h1>
+        <h1>${getaway.title}</h1>
       </div>
     </header>
 
     <div class="header2">
-      <h1>Antal aktiviteter tilf&oslash;jet:</h1>
-      <div class="aktiviteter-nummer">
-
+      <h1>Tag væk en weekend, med én du holder af</h1>
+      <p>${getaway.description}</p>
+      <p>Med i pakken er der inkluderet:</p>
+      <div class="includes">
+      <p>${getaway.includes}</p>
       </div>
-    </div>
-
-
-    <div class="aktiviteter-container">
-          
-      
-
+      <h2>Pris ${getaway.price},-</h2>
+      <a href="kontakt.html">
+      <div class="booknu">
+      <h2>BOOK NU</h2>
       </div>
-
-
-    <footer>
+      </a>
+  </div>
+    <footer style="padding: 180px 0 50px 0;">
       <div class="sociale-medier">
         <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
         <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
@@ -79,5 +64,28 @@
       </div>
     </footer>
   </div>
-</body>
-</html>
+      `,
+
+    init : async () => {
+
+        let getawayContainer = document.querySelector('.containerophold2');
+
+        if(getawayContainer)
+        {
+
+            const response = await service.get('stays/6533c22ed89bd7c9ba8de735');
+
+            response.forEach((getaway) => {
+
+                getawayContainer.insertAdjacentHTML('beforeend', getaways.template(getaway))
+
+            }); 
+
+        }
+    }
+
+}
+
+
+
+export default getaways;
