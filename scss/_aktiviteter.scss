@@ -34,9 +34,12 @@
 .aktiviteter-element {
     position: relative;
     display: flex;
-flex-direction: column;
-padding-bottom: 50px;
-
+    flex-direction: column;
+    padding-bottom: 50px;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
 }
 
 

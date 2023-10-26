@@ -58,24 +58,24 @@
       <h1>Vil du booke et ophold? Eller har du blot et spørgsmål?</h1>
       <p>Så tøv ikke med at tage kontakt til os herunder. Vi bestræber os på at svare på henvendelser indenfor 24 timer, men op til ferier kan der være travlt, og svartiden kan derfor være op til 48 timer</p>
       
-
-      <form>
+      <div class="form-container">
+      <form id="form">
         <div class="label-container">
           <label>
             <p>Navn</p>
-            <input name="name" type="text" placeholder="" maxlength="16" required></input></label>
+            <input name="name" type="text" maxlength="16" required></input></label>
           </div>
 
           <div class="label-container">
             <label>
             <p>Email</p>
-            <input name="email" type="email" placeholder="" maxlength="16" required></input></label>
+            <input name="email" type="email" maxlength="16" required></input></label>
             </div>
 
           <div class="label-container">
             <label>
             <p>Hvad drejer henvendelsen sig om?</p>
-            <select name="option" id="option">
+            <select name="subject" id="subject">
               
               <option value="question">Sporgsm&aring;l</option>
               <option value="booking">Booking</option>
@@ -85,13 +85,14 @@
 
             <div class="label-container">
             <label><p>Besked (Skriv dato’er, hvis det drejer sig om en booking)</p>
-            <textarea name="message" type="text" placeholder="" style="resize: none"></textarea></label>
+            <textarea name="message" type="text" style="resize: none"></textarea></label>
               
               </div>
-              <a type="submit" class="submitbutton" style="cursor: pointer;"><div class="submitbutton-container"><p>INDSEND</p>
+              <button type="submit" class="submitbutton" style="cursor: pointer;"><div class="submitbutton-container"><p>INDSEND</p>
             </div>
-          </a>
+          </button>
     </form>
+  </div>
   </div>
 
   

@@ -87,6 +87,16 @@ header h1 {
   box-sizing: border-box;
 }
 
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
 .container1 {
   overflow: hidden;
   background: linear-gradient(0deg, rgba(52, 98, 108, 0.5), rgba(52, 98, 108, 0.5)), url("/Gittes_Glamping_Assets/image_00.jpg");
@@ -310,6 +320,7 @@ textarea {
 }
 
 .computernav {
+  margin-top: 10px;
   display: none;
 }
 
@@ -348,16 +359,6 @@ textarea {
   width: 100vh;
   height: 78vh;
   object-fit: cover;
-}
-
-.ophold-container:before {
-  content: "";
-  display: block;
-  background: rgba(52, 98, 108, 0.5);
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
 }
 
 .ophold-tekst-container {
@@ -429,6 +430,10 @@ textarea {
   display: flex;
   flex-direction: column;
   padding-bottom: 50px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
 }
 
 .aktiviteter-img {
@@ -544,6 +549,9 @@ textarea {
   .container4 {
     background-position: 80% 50%;
   }
+  .container2 {
+    background-position: top;
+  }
   .aktiviteter-container {
     flex-direction: row;
   }
@@ -551,6 +559,30 @@ textarea {
     width: 40vh;
     height: 40vh;
     transform: translate(0, 35%);
+  }
+  .anbefalinger {
+    flex-direction: row;
+  }
+  .ophold-container {
+    flex-direction: row;
+    height: 100%;
+    align-content: center;
+    position: relative;
+    justify-content: center;
+  }
+  .ophold-element {
+    padding-bottom: 0;
+  }
+  .ophold-img {
+    position: relative;
+  }
+  .ophold-img img {
+    width: 40vh;
+    height: 40vh;
+  }
+  .ophold-tekst-container {
+    position: absolute;
+    transform: translate(0, -28%);
   }
 }
 .anbefalinger {
@@ -612,6 +644,33 @@ textarea {
 .computernav a:hover {
   background-color: rgba(128, 128, 128, 0.5);
   border-color: transparent;
+}
+
+.medlemtak {
+  background: rgb(148, 120, 167);
+  text-align: center;
+  height: 61.6vh;
+  z-index: 10;
+  top: 0;
+  width: 100%;
+  padding: 80px 0 60px 0;
+}
+
+.medlemtak p {
+  padding: 0 40px 30px 40px;
+  color: white;
+}
+
+.medlemtakbutton {
+  padding-top: 30px;
+}
+
+.medlemtakbutton a {
+  text-decoration: none;
+  background-color: #355674;
+  color: #D7E6EC;
+  border-radius: 100px;
+  padding: 15px 80px 15px 80px;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,28 @@
+.medlemtak {
+    background:rgba(148, 120, 167, 1);
+    text-align: center;
+  
+    height: 61.6vh;
+    z-index: 10;
+    top: 0;
+    width: 100%;
+    padding: 80px 0 60px 0;
+   
+    
+}
+.medlemtak p {
+    padding: 0 40px 30px 40px;
+    color: white;
+}
+
+.medlemtakbutton {
+    padding-top: 30px;
+    
+}
+.medlemtakbutton a {
+    text-decoration: none;
+    background-color: #355674;
+    color: #D7E6EC;
+    border-radius: 100px;
+    padding: 15px 80px 15px 80px;
+}

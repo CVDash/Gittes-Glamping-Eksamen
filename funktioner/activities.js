@@ -6,9 +6,9 @@ const activities = {
     
     template : (activity, index) => `
     
-    <div class="aktiviteter-element">
+    <div class="aktiviteter-element" style="background-image: url(${activity.image})">
     <div class="aktiviteter-img">
-      <img src=${activity.image}>
+      
     </div>
     <div class="aktiviteter-tekst-container">
   <div class="aktiviteter-tekst">

@@ -13,4 +13,5 @@ service.get = async (type) => {
 
 
 
+
 export default service

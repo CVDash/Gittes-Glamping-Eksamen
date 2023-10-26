@@ -32,6 +32,12 @@
     .container4 {
         background-position: 80% 50%;
     }
+
+    .container2 {
+         background-position: top;
+        
+    }
+
     .aktiviteter-container {
         flex-direction: row;
     }
@@ -40,5 +46,37 @@
         width: 40vh;
         height: 40vh;
         transform: translate(0, 35%)
+    }
+
+    .anbefalinger {
+        flex-direction: row;
+    }
+
+
+    .ophold-container {
+        flex-direction: row;
+        height: 100%;
+        align-content: center;
+        position: relative;
+        justify-content: center;
+    }
+
+    .ophold-element {
+        padding-bottom: 0;
+    }
+
+    .ophold-img{
+        position: relative;
+    }
+
+
+    .ophold-img img {
+        width: 40vh;
+        height: 40vh;
+    }
+
+    .ophold-tekst-container {
+        position: absolute;
+        transform: translate(0,-28%);
     }
 }
