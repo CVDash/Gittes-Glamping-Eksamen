@@ -17,51 +17,6 @@ button {
     
 }
 
-.container1 {
-    
-    overflow: hidden;
-    background: linear-gradient(0deg, rgba(52, 98, 108, 0.5), rgba(52, 98, 108, 0.5)), url("/Gittes_Glamping_Assets/image_00.jpg");
-    background-position-x: 50%;
-    width: 100%;
-    height: 20%;
-    background-repeat: no-repeat;
-}
-
-.container2 {
-    
-    overflow: hidden;
-    background: linear-gradient(0deg, rgba(52, 98, 108, 0.5), rgba(52, 98, 108, 0.5)), url("/Gittes_Glamping_Assets/image_01.jpg");
-    
-    background-position-x: 75%;
-    background-position-y: 50%;
-    width: 100%;
-}
-
-.container3 {
-    
-    overflow: hidden;
-    background: linear-gradient(0deg, rgba(52, 98, 108, 0.5), rgba(52, 98, 108, 0.5)), url("/Gittes_Glamping_Assets/image_03.jpg");
-    background-position-x: 50%;
-    
-    width: 100%;
-}
-
-.container4 {
-    
-    overflow: hidden;
-    background: linear-gradient(0deg, rgba(52, 98, 108, 0.5), rgba(52, 98, 108, 0.5)), url("/Gittes_Glamping_Assets/image_04.jpg");
-    background-position: 80% 0;
-    width: 100%;
-}
-
-.container5 {
-    
-    overflow: hidden;
-    background: linear-gradient(0deg, rgba(52, 98, 108, 0.5), rgba(52, 98, 108, 0.5)), url("/Gittes_Glamping_Assets/image_05.jpg");
-    background-position: 50% 0;
-    width: 100%;
-}
-
 
 .containerophold1 {
     overflow: hidden;
@@ -95,6 +50,7 @@ footer {
     background-color: #2A4F57;
     text-align: center;
     padding: 50px 0 50px 0;
+    margin-top: -50px;
 }
 
 footer img {
@@ -104,7 +60,7 @@ footer img {
     display: flex;
     justify-content: center;
     gap: 10px;
-    padding: 0 0 20px 0;
+    padding: 20px 0 20px 0;
 }
 .sociale-medier a{
    color: white;

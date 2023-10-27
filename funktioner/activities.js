@@ -34,7 +34,13 @@ const activities = {
     </div>
     </div
   </div>
-</div>
+</div> 
+
+
+
+
+
+
       `,
 
     init : async () => {

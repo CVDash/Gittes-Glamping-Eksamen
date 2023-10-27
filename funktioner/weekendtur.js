@@ -6,7 +6,7 @@ const weekendturer = {
     
     template : (weekendtur) => `
     
-    <div class="container-background" style="background-image: url(${weekendtur.image})">
+    
     <nav>
       <div class="topnav">
       <a class="logotopnav" href="index.html"><img src="/Gittes_Glamping_Assets/logo.png"></a>
@@ -33,7 +33,7 @@ const weekendturer = {
       
     </nav>
 
-    <header>
+    <!--<header>
       
       <div class="headertitler">
         <h1>${weekendtur.title}</h1>
@@ -64,7 +64,46 @@ const weekendturer = {
         <img src="Gittes_Glamping_Assets/logo.png"><p>Gittes Glamping</p>
       </div>
     </footer>
+  </div> -->
+
+
+  <div class="headerWeekendtur">
+  <div>
+    <h1>${weekendtur.title}</h1>
   </div>
+</div>
+
+<div class="content-box">
+  <div class="content-text">
+    <h1>Tag væk en weekend, med én du holder af</h1>
+    <p>${weekendtur.description}</p>
+    <p>Med i pakken er der inkluderet:</p>
+      <div class="includes">
+      <p>${weekendtur.includes}</p>
+      </div>
+      <h2>Pris ${weekendtur.price},-</h2>
+      <a href="kontakt.html">
+      <div class="booknu">
+      <h2>BOOK NU</h2>
+      </div>
+      </a>
+  </div>
+</div>
+<footer>
+      <div class="sociale-medier">
+        <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+      </div>
+      <div class="footerlogo">
+        <img src="Gittes_Glamping_Assets/logo.png"><p>Gittes Glamping</p>
+      </div>
+    </footer>
+  
+
+
+
+
+
       `,
 
     init : async () => {

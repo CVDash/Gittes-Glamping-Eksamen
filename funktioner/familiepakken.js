@@ -33,17 +33,16 @@ const familiepakkene = {
       
     </nav>
 
-    <header>
-      
-      <div class="headertitler">
-        <h1>${familiepakken.title}</h1>
-      </div>
-    </header>
+    <div class="headerFamiliepakken">
+  <div>
+    <h1>${familiepakken.title}</h1>
+  </div>
+</div>
 
-    <div class="header2">
-      <h1>Tag væk en weekend, med én du holder af</h1>
-      <p>${familiepakken.description}</p>
-      <p>Med i pakken er der inkluderet:</p>
+<div class="content-box">
+  <div class="content-text">
+    <p>${familiepakken.description}</p>
+    <p>Med i pakken er der inkluderet:</p>
       <div class="includes">
       <p>${familiepakken.includes}</p>
       </div>
@@ -53,9 +52,9 @@ const familiepakkene = {
       <h2>BOOK NU</h2>
       </div>
       </a>
-      
   </div>
-    <footer style="padding: 180px 0 50px 0;">
+</div>
+<footer>
       <div class="sociale-medier">
         <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
         <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
@@ -64,7 +63,6 @@ const familiepakkene = {
         <img src="Gittes_Glamping_Assets/logo.png"><p>Gittes Glamping</p>
       </div>
     </footer>
-  </div>
       `,
 
     init : async () => {

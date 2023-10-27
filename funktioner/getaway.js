@@ -6,7 +6,7 @@ const getaways = {
     
     template : (getaway) => `
     
-    <div class="container-background" style="background-image: url(${getaway.image})">
+     <div class="container-background" style="background-image: url(${getaway.image})">
     <nav>
       <div class="topnav">
       <a class="logotopnav" href="index.html"><img src="/Gittes_Glamping_Assets/logo.png"></a>
@@ -33,17 +33,18 @@ const getaways = {
       
     </nav>
 
-    <header>
-      
-      <div class="headertitler">
-        <h1>${getaway.title}</h1>
-      </div>
-    </header>
+    
 
-    <div class="header2">
-      <h1>Tag væk en weekend, med én du holder af</h1>
-      <p>${getaway.description}</p>
-      <p>Med i pakken er der inkluderet:</p>
+  <div class="headerGetaway">
+  <div>
+    <h1>${getaway.title}</h1>
+  </div>
+</div>
+
+<div class="content-box">
+  <div class="content-text">
+    <p>${getaway.description}</p>
+    <p>Med i pakken er der inkluderet:</p>
       <div class="includes">
       <p>${getaway.includes}</p>
       </div>
@@ -54,7 +55,8 @@ const getaways = {
       </div>
       </a>
   </div>
-    <footer style="padding: 180px 0 50px 0;">
+</div>
+<footer>
       <div class="sociale-medier">
         <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
         <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
@@ -63,7 +65,6 @@ const getaways = {
         <img src="Gittes_Glamping_Assets/logo.png"><p>Gittes Glamping</p>
       </div>
     </footer>
-  </div>
       `,
 
     init : async () => {
