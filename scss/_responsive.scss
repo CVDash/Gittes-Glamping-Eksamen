@@ -13,6 +13,15 @@
     justify-content: space-between;
 }
 
+.label-container h2 {
+    font-size: 50px;
+}
+
+input, select, textarea {
+    width: 60vh;
+}
+
+
 
 .computernav a{
    
@@ -36,14 +45,26 @@
 
     .header2 p {
         padding: 0 60px;
+       font-size: 20px;
     }
     
+    .header2 h1 {
+        font-size: 80px;
+        padding: 0 60px;
+    }
+
 }
 
 @media (min-width: 1024px) {
 
+    
+
     .aktiviteter-laesmere {
         width: 35vh;
+    }
+
+    .aktiviteter-laesmere-button {
+        width: 30vh;
     }
 
 
@@ -73,7 +94,7 @@
 
     .aktiviteter-element {
         width: 50vh;
-        
+        margin-bottom: 100px;
     }
 
     .anbefalinger-container {
@@ -95,6 +116,12 @@
 
     
     .header2 p {
+        padding: 0 120px;
+        font-size: 30px;
+    }
+
+    .header2 h1 {
+        font-size: 100px;
         padding: 0 120px;
     }
 }
@@ -131,4 +158,17 @@
        
    }
 
+   .ophold-element {
+    max-height: 40vh;
+    max-width: 300px;
+    height: 100%;
+}
+
+}
+
+@media (min-width: 1500px) {
+    .ophold-element {
+        max-height: 40vh;
+        max-width: 500px;
+    }
 }

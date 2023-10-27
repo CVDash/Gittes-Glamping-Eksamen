@@ -3,11 +3,13 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-top: 1px solid #B9C6C4;
+    padding-top: 20px;
 }
 .label-container  {
     padding-bottom: 30px;
 }
-.label-container p {
+.label-container h2 {
     padding-bottom:10px;
     font-family: 'Zen Loop', cursive;
     font-size: 30px;
@@ -62,3 +64,9 @@ textarea {
     padding: 30px 20px;
     width: 30vh;
 }
+
+option {
+    background-color: #34626C;
+    font-family: 'Zen Loop', cursive;
+}
+

@@ -45,6 +45,10 @@ header h1 {
   font-family: "Zen Loop", cursive;
 }
 
+.header2 label p {
+  padding-bottom: 10px;
+}
+
 .header2 {
   display: flex;
   flex-direction: column;
@@ -111,7 +115,6 @@ button {
   overflow: hidden;
   background: linear-gradient(0deg, rgba(52, 98, 108, 0.5), rgba(52, 98, 108, 0.5)), url("/Gittes_Glamping_Assets/image_00.jpg");
   background-position-x: 50%;
-  background-position-y: 60%;
   width: 100%;
   height: 20%;
   background-repeat: no-repeat;
@@ -135,7 +138,7 @@ button {
 .container4 {
   overflow: hidden;
   background: linear-gradient(0deg, rgba(52, 98, 108, 0.5), rgba(52, 98, 108, 0.5)), url("/Gittes_Glamping_Assets/image_04.jpg");
-  background-position: 80% 80%;
+  background-position: 80% 0;
   width: 100%;
 }
 
@@ -220,13 +223,15 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-top: 1px solid #B9C6C4;
+  padding-top: 20px;
 }
 
 .label-container {
   padding-bottom: 30px;
 }
 
-.label-container p {
+.label-container h2 {
   padding-bottom: 10px;
   font-family: "Zen Loop", cursive;
   font-size: 30px;
@@ -279,6 +284,11 @@ textarea {
   border-radius: 45px 0;
   padding: 30px 20px;
   width: 30vh;
+}
+
+option {
+  background-color: #34626C;
+  font-family: "Zen Loop", cursive;
 }
 
 #dropdown {
@@ -470,6 +480,7 @@ textarea {
   width: 90vh;
   justify-content: center;
   align-self: center;
+  margin-bottom: 90px;
 }
 
 .aktiviteter-img {
@@ -494,7 +505,7 @@ textarea {
   padding-bottom: 50px;
   display: flex;
   flex-direction: column;
-  gap: 200px;
+  gap: 50px;
   align-items: center;
   color: white;
 }
@@ -553,9 +564,12 @@ button:focus {
 }
 
 .aktiviteter-laesmere-button {
-  border: 1px solid #B9C6C4;
+  border: 2px solid #B9C6C4;
   border-radius: 30px 0;
   padding: 10px 20px;
+  position: absolute;
+  background-color: rgb(52, 98, 108);
+  width: 35vh;
 }
 
 .aktiviteter-laesmere-button-flex {
@@ -591,9 +605,9 @@ button:focus {
 .aktiviteter-hidden {
   border-top: 1px solid #B9C6C4;
   font-size: 14px;
-  margin-top: 10px;
-  padding-top: 10px;
+  padding: 10px 0;
   font-family: "Nanum Gothic", sans-serif;
+  text-align: start;
 }
 
 .anbefalinger {
@@ -669,6 +683,11 @@ button:focus {
   border-color: transparent;
 }
 
+option:hover {
+  background-color: #2A4F57;
+  color: white;
+}
+
 .medlemtak {
   font-family: "Zen Loop", cursive;
   height: 61.6vh;
@@ -705,6 +724,12 @@ button:focus {
     display: flex;
     justify-content: space-between;
   }
+  .label-container h2 {
+    font-size: 50px;
+  }
+  input, select, textarea {
+    width: 60vh;
+  }
   .computernav a {
     padding: 0 20px;
     margin-top: 20px;
@@ -723,11 +748,19 @@ button:focus {
   }
   .header2 p {
     padding: 0 60px;
+    font-size: 20px;
+  }
+  .header2 h1 {
+    font-size: 80px;
+    padding: 0 60px;
   }
 }
 @media (min-width: 1024px) {
   .aktiviteter-laesmere {
     width: 35vh;
+  }
+  .aktiviteter-laesmere-button {
+    width: 30vh;
   }
   .container4 {
     background-position: 80% 0;
@@ -748,6 +781,7 @@ button:focus {
   }
   .aktiviteter-element {
     width: 50vh;
+    margin-bottom: 100px;
   }
   .anbefalinger-container {
     display: flex;
@@ -764,6 +798,11 @@ button:focus {
     font-size: 12px;
   }
   .header2 p {
+    padding: 0 120px;
+    font-size: 30px;
+  }
+  .header2 h1 {
+    font-size: 100px;
     padding: 0 120px;
   }
 }
@@ -790,6 +829,17 @@ button:focus {
   }
   .container2 {
     background-position: top;
+  }
+  .ophold-element {
+    max-height: 40vh;
+    max-width: 300px;
+    height: 100%;
+  }
+}
+@media (min-width: 1500px) {
+  .ophold-element {
+    max-height: 40vh;
+    max-width: 500px;
   }
 }
 

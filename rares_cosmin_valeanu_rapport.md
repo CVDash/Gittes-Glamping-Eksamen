@@ -1,6 +1,7 @@
-Gittes Glamping - WebH122-2
-
-
+Navn: Rares Cosmin Valeanu
+Opgave: Eksamensopgave Gittes Glamping den 23. oktober 2023
+Hold: WebH122-2
+Valgfri opgaver jeg har arbejdet på: 1, 2 og 6
 
 Ting jeg har gjørt før eksamenen
     - Har bygget eksamenens generel struktur lavet af 
@@ -48,4 +49,18 @@ Torsdag
     - Har færdiggjort projektet 99.9%
 
 Fredag
-    -
+    - Finishing touches - Har fixet mere styling og responsive styling i ophold og aktiviteter
+
+
+
+
+
+Vurdering af min egen indsats og gennemførelse af prøven: 
+Jeg tænker jeg har gjørt så meget så jeg kunne gør. Jeg har arbejdet omkring 6-10 timer/dag og har haft fuld fokus på projektet. Eksamenen er færdig, men styling kunne godt være meget bedre end hvad jeg har gjørt.
+
+Argumentation for mine valg: 
+I den her projekt jeg har brugt html, vanilla javascript, Sass, Postman, GitHub og internettet
+- Vanilla Javascript var brugt fordi den er den eneste jeg føler mig komfortabel med og installerer ikke andre ting jeg må ikke have brug for.
+- Sass var brugt fordi den er meget mere nem at linke alle html til en enkelt css stylesheet og, fordi jeg bruger den samme topnav, header, header2 og footer på alle sider. Alle scss filer jeg bruger til en specifik side eller del af siden konvergere i en css alle sider linker til.
+- GitHub var brugt fordi den er en rigtig god måde på at gem dine projekter online, så hvis nogen går galt på min pc så kan jeg brug en anden computer og hente den direkt fra git til at fortsætte med hvad jeg har sidst gjort.
+- Internettet var brugt til at google informationer når har haft ingen ide om hvad skal jeg gør i projektet.
